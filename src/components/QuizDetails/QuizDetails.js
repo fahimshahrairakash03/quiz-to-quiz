@@ -2,6 +2,8 @@ import React from "react";
 import QuizOptions from "../QuizOptions/QuizOptions";
 import "./QuizDetails.css";
 import { EyeIcon } from "@heroicons/react/24/solid";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const QuizDetails = ({ quiz, idx }) => {
   //   console.log(quiz);
@@ -9,13 +11,13 @@ const QuizDetails = ({ quiz, idx }) => {
   const clicked = (option) => {
     console.log(option);
     if (option === correctAnswer) {
-      alert("this is right");
+      toast.success("Correct Answer");
     } else {
-      alert("this is not right");
+      toast.error("Wrong Answer");
     }
   };
   const answer = () => {
-    alert(correctAnswer);
+    toast.success(correctAnswer);
   };
 
   return (
@@ -37,6 +39,7 @@ const QuizDetails = ({ quiz, idx }) => {
           ))}
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
