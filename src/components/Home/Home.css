@@ -1,0 +1,28 @@
+.home-intro {
+  width: 100%;
+}
+.home-details {
+  width: 100%;
+  background-color: #1f9197;
+}
+.home-pic {
+  background: url(./img/olav-ahrens-rotne-4Ennrbj1svk-unsplash.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.fsize {
+  font-size: 80px;
+}
+
+@media screen and (max-width: 750px) {
+  .home-pic {
+    height: 40vh;
+  }
+}
+@media screen and (max-width: 950px) {
+  .home-pic {
+    height: 60vh;
+  }
+}
