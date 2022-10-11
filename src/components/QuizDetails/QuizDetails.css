@@ -4,3 +4,18 @@
 .red {
   background-color: red;
 }
+.quizbox {
+  position: relative;
+  border: 1px solid violet;
+  border-radius: 10px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: lightcyan;
+}
+.eyeicon {
+  position: absolute;
+  width: 20px;
+  right: 2px;
+  top: 2px;
+  cursor: pointer;
+}

@@ -4,11 +4,13 @@ import QuizDetails from "../QuizDetails/QuizDetails";
 
 const Quizes = () => {
   const datas = useLoaderData();
+  console.log(datas);
   const quizes = datas.data.questions;
   return (
     <div>
-      {quizes.map((quiz) => (
-        <QuizDetails key={quiz.id} quiz={quiz}></QuizDetails>
+      <h1>Quiz of {datas.data.name}</h1>
+      {quizes.map((quiz, idx) => (
+        <QuizDetails idx={idx} key={quiz.id} quiz={quiz}></QuizDetails>
       ))}
     </div>
   );
