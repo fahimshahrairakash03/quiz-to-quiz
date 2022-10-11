@@ -42,6 +42,7 @@ function App() {
         },
       ],
     },
+    { path: "*", element: <div>404, This route not found</div> },
   ]);
   return (
     <div className="App">
