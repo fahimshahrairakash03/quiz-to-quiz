@@ -5,6 +5,9 @@
   width: 100%;
   background-color: #1f9197;
 }
+.topics-card {
+  background-color: #055f64;
+}
 .home-pic {
   background: url(./img/olav-ahrens-rotne-4Ennrbj1svk-unsplash.jpg);
   height: 100vh;

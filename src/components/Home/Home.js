@@ -21,9 +21,11 @@ const Home = () => {
         <div className="home-pic"></div>
       </div>
 
-      {quizes.map((topic) => (
-        <Topics key={topic.id} topic={topic}></Topics>
-      ))}
+      <div className="topics-card  d-sm-flex d-md-flex d-lg-flex  flex-sm-column flex-md-row justify-content-sm-center align-items-sm-center d-lg-flex justify-content-md-between justify-content-lg-between p-3">
+        {quizes.map((topic) => (
+          <Topics key={topic.id} topic={topic}></Topics>
+        ))}
+      </div>
     </div>
   );
 };
